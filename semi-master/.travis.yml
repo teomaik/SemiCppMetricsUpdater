@@ -1,0 +1,26 @@
+language: java
+
+jdk:
+  - openjdk8
+  - openjdk11
+
+branches:
+  only:
+  - master
+
+sudo: required
+
+before_install:
+  - sudo apt update
+
+install:
+  - sudo apt install maven -y # this command is only for demonstration reason. Any Travis virtual machine has maven pre-installed by default.
+
+before_script: 
+  - cd semi  # enter Maven root directory
+  - ls -la
+
+script: 
+  - mvn clean install
+  - cd target
+  - result=$(java -jar semi-0.0.1-jar-with-dependencies.jar -t) && [[ "$result" == "semi test-run succesfull" ]] && exit 0 || exit 1

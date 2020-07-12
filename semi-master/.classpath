@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="semi/src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="semi/extlibs/database/mysql-connector-java-8.0.19.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="semi/extlibs/macrofocus/macrofocus-common/1/macrofocus-common-1.jar"/>
+	<classpathentry kind="lib" path="semi/extlibs/macrofocus/macrofocus-slider/1/macrofocus-slider-1.jar"/>
+	<classpathentry kind="lib" path="semi/extlibs/macrofocus/macrofocus-treemap/1/macrofocus-treemap-1.jar"/>
+	<classpathentry kind="lib" path="semi/extlibs/macrofocus/macrofocus-visualization/1/macrofocus-visualization-1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
